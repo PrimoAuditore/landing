@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Grupo del Este | Software-Based Experiences",
+    "description": "We craft exceptional digital experiences through software development, consultancy, and innovative in-house products."
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Software-Based Experiences",
+    "subtitle": "We transform ideas into exceptional digital products through development, consultancy, and innovation.",
+    "cta": "Get in Touch"
+  },
+  "services": {
+    "title": "What We Do",
+    "subtitle": "We bring together expertise across multiple domains to deliver comprehensive software solutions.",
+    "development": {
+      "number": "01",
+      "title": "Development",
+      "description": "End-to-end software development, from concept to deployment. We build scalable, performant applications tailored to your needs.",
+      "items": ["Web Applications", "Mobile Apps", "APIs & Backend", "Cloud Infrastructure"]
+    },
+    "consultancy": {
+      "number": "02",
+      "title": "Consultancy",
+      "description": "Strategic guidance to navigate the complexities of technology. We help you make informed decisions that drive growth.",
+      "items": ["Technical Strategy", "Architecture Review", "Process Optimization", "Team Augmentation"]
+    },
+    "products": {
+      "number": "03",
+      "title": "Products",
+      "description": "In-house innovations that solve real problems. Our products are born from experience and refined through iteration.",
+      "items": ["SaaS Solutions", "Developer Tools", "Enterprise Platforms", "Digital Experiences"]
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "headline": "We believe in the power of well-crafted software to transform businesses and lives.",
+    "description": "Grupo del Este is an umbrella company uniting passionate technologists under one vision: creating software-based experiences that matter. From startups to enterprises, we partner with organizations ready to push boundaries.",
+    "stats": {
+      "projects": "Projects Delivered",
+      "clients": "Happy Clients",
+      "years": "Years of Experience"
+    }
+  },
+  "contact": {
+    "title": "Let's Build Something Together",
+    "subtitle": "Ready to start your next project? We'd love to hear from you.",
+    "email": "Send us an email",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "backToTop": "Back to top"
+  }
+}

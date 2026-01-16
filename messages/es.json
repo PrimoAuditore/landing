@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Grupo del Este | Experiencias Basadas en Software",
+    "description": "Creamos experiencias digitales excepcionales a través del desarrollo de software, consultoría y productos innovadores propios."
+  },
+  "nav": {
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "tagline": "Experiencias Basadas en Software",
+    "subtitle": "Transformamos ideas en productos digitales excepcionales a través del desarrollo, consultoría e innovación.",
+    "cta": "Contáctanos"
+  },
+  "services": {
+    "title": "Lo Que Hacemos",
+    "subtitle": "Reunimos experiencia en múltiples dominios para entregar soluciones de software integrales.",
+    "development": {
+      "number": "01",
+      "title": "Desarrollo",
+      "description": "Desarrollo de software de principio a fin, desde el concepto hasta el despliegue. Construimos aplicaciones escalables y de alto rendimiento adaptadas a tus necesidades.",
+      "items": ["Aplicaciones Web", "Apps Móviles", "APIs & Backend", "Infraestructura Cloud"]
+    },
+    "consultancy": {
+      "number": "02",
+      "title": "Consultoría",
+      "description": "Orientación estratégica para navegar las complejidades de la tecnología. Te ayudamos a tomar decisiones informadas que impulsan el crecimiento.",
+      "items": ["Estrategia Técnica", "Revisión de Arquitectura", "Optimización de Procesos", "Aumento de Equipo"]
+    },
+    "products": {
+      "number": "03",
+      "title": "Productos",
+      "description": "Innovaciones propias que resuelven problemas reales. Nuestros productos nacen de la experiencia y se refinan a través de la iteración.",
+      "items": ["Soluciones SaaS", "Herramientas para Desarrolladores", "Plataformas Empresariales", "Experiencias Digitales"]
+    }
+  },
+  "about": {
+    "title": "Nosotros",
+    "headline": "Creemos en el poder del software bien diseñado para transformar negocios y vidas.",
+    "description": "Grupo del Este es una empresa matriz que une tecnólogos apasionados bajo una visión: crear experiencias basadas en software que importan. Desde startups hasta empresas, nos asociamos con organizaciones listas para superar límites.",
+    "stats": {
+      "projects": "Proyectos Entregados",
+      "clients": "Clientes Satisfechos",
+      "years": "Años de Experiencia"
+    }
+  },
+  "contact": {
+    "title": "Construyamos Algo Juntos",
+    "subtitle": "¿Listo para comenzar tu próximo proyecto? Nos encantaría saber de ti.",
+    "email": "Envíanos un email",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "backToTop": "Volver arriba"
+  }
+}
