@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import localFont from "next/font/local";
+import { Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/lib/smooth-scroll";
 import { CustomCursor } from "@/components/ui/CustomCursor";
@@ -13,19 +12,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const instrumentSerif = localFont({
-  src: [
-    {
-      path: "../public/fonts/InstrumentSerif-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/InstrumentSerif-Italic.ttf",
-      weight: "400",
-      style: "italic",
-    },
-  ],
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
   variable: "--font-instrument-serif",
   display: "swap",
 });
