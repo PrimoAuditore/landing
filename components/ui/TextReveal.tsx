@@ -18,37 +18,39 @@ export const TextReveal = ({
   as: Component = "span",
   splitBy = "word",
 }: TextRevealProps) => {
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const items = splitBy === "word" ? children.split(" ") : children.split("");
 
   return (
-    <Component ref={ref as React.RefObject<HTMLElement>} className={className}>
-      <span className="sr-only">{children}</span>
-      <span aria-hidden="true" className="inline">
-        {items.map((item, index) => (
-          <span
-            key={index}
-            className="inline-block overflow-hidden"
-            style={{ marginRight: splitBy === "word" ? "0.25em" : 0 }}
-          >
-            <motion.span
-              className="inline-block"
-              initial={{ y: "100%" }}
-              animate={isInView ? { y: 0 } : { y: "100%" }}
-              transition={{
-                duration: 0.5,
-                ease: [0.25, 0.4, 0.25, 1],
-                delay: delay + index * (splitBy === "word" ? 0.05 : 0.02),
-              }}
+    <span ref={ref} className={className}>
+      <Component>
+        <span className="sr-only">{children}</span>
+        <span aria-hidden="true" className="inline">
+          {items.map((item, index) => (
+            <span
+              key={index}
+              className="inline-block overflow-hidden"
+              style={{ marginRight: splitBy === "word" ? "0.25em" : 0 }}
             >
-              {item === " " ? "\u00A0" : item}
-            </motion.span>
-          </span>
-        ))}
-      </span>
-    </Component>
+              <motion.span
+                className="inline-block"
+                initial={{ y: "100%" }}
+                animate={isInView ? { y: 0 } : { y: "100%" }}
+                transition={{
+                  duration: 0.5,
+                  ease: [0.25, 0.4, 0.25, 1],
+                  delay: delay + index * (splitBy === "word" ? 0.05 : 0.02),
+                }}
+              >
+                {item === " " ? "\u00A0" : item}
+              </motion.span>
+            </span>
+          ))}
+        </span>
+      </Component>
+    </span>
   );
 };
 
