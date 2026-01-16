@@ -31,11 +31,11 @@ export const TextReveal = ({
           {items.map((item, index) => (
             <span
               key={index}
-              className="inline-block overflow-hidden"
+              className="inline-block overflow-hidden align-bottom"
               style={{ marginRight: splitBy === "word" ? "0.25em" : 0 }}
             >
               <motion.span
-                className="inline-block"
+                className="inline-block will-change-transform"
                 initial={{ y: "100%" }}
                 animate={isInView ? { y: 0 } : { y: "100%" }}
                 transition={{
@@ -71,7 +71,7 @@ export const AnimatedParagraph = ({
   return (
     <motion.p
       ref={ref}
-      className={className}
+      className={`${className} will-change-transform`}
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{

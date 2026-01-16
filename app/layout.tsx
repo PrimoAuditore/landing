@@ -64,7 +64,7 @@ type Props = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html className={`${inter.variable} ${instrumentSerif.variable}`}>
+    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`}>
       <body className="antialiased">
         <SmoothScrollProvider>
           <PageLoader />

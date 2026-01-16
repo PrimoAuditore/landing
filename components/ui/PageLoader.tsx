@@ -7,12 +7,13 @@ export const PageLoader = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time for fonts and assets
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
+    // Wait for fonts to load or timeout after 800ms max
+    const fontLoadPromise = document.fonts?.ready || Promise.resolve();
+    const timeoutPromise = new Promise((resolve) => setTimeout(resolve, 800));
 
-    return () => clearTimeout(timer);
+    Promise.race([fontLoadPromise, timeoutPromise]).then(() => {
+      setIsLoading(false);
+    });
   }, []);
 
   return (

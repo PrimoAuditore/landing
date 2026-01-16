@@ -5,7 +5,7 @@
   --foreground: #0a0a0a;
   --accent: #0066FF;
   --accent-hover: #0052cc;
-  --muted: #737373;
+  --muted: #525252;
   --border: #e5e5e5;
 }
 
@@ -24,7 +24,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #fafafa;
-    --muted: #a3a3a3;
+    --muted: #b3b3b3;
     --border: #262626;
   }
 }
