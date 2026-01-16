@@ -31,7 +31,7 @@ export const TextReveal = ({
           {items.map((item, index) => (
             <span
               key={index}
-              className="inline-block overflow-hidden align-bottom"
+              className="inline-block overflow-hidden align-bottom pb-[0.1em]"
               style={{ marginRight: splitBy === "word" ? "0.25em" : 0 }}
             >
               <motion.span
