@@ -134,25 +134,10 @@ export const About = () => {
 
         {/* Stats section */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 pt-16 border-t border-background/10">
-          <Counter
-            end={150}
-            suffix="+"
-            label={t("stats.projects")}
-            delay={0}
-          />
-          <Counter
-            end={50}
-            suffix="+"
-            label={t("stats.clients")}
-            delay={200}
-          />
+          <Counter end={30} suffix="+" label={t("stats.projects")} delay={0} />
+          <Counter end={20} suffix="+" label={t("stats.clients")} delay={200} />
           <div className="col-span-2 md:col-span-1">
-            <Counter
-              end={10}
-              suffix="+"
-              label={t("stats.years")}
-              delay={400}
-            />
+            <Counter end={7} suffix="+" label={t("stats.years")} delay={400} />
           </div>
         </div>
       </div>
