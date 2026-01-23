@@ -5,6 +5,7 @@ import { SmoothScrollProvider } from "@/lib/smooth-scroll";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { PageLoader } from "@/components/ui/PageLoader";
+import { MicrosoftClarity } from "@/components/MicrosoftClarity";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: Props) {
     <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`}>
       <body className="antialiased">
         <SmoothScrollProvider>
+          <MicrosoftClarity />
           <PageLoader />
           <ScrollProgress />
           <CustomCursor />
