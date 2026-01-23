@@ -60,6 +60,15 @@ export const Footer = () => {
             </button>
           </MagneticWrapper>
         </div>
+
+        <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-center text-center gap-2 md:gap-8">
+          <p className="text-xs text-muted">
+            RUT: 77989716-8 <span className="hidden md:inline mx-1">|</span> Razon Social: GRUPO DEL ESTE SPA
+          </p>
+          <p className="text-xs text-muted">
+            Direccion: PROVIDENCIA 1208 Oficina 207, PROVIDENCIA, METROPOLITANA DE SANTIAGO
+          </p>
+        </div>
       </div>
     </footer>
   );
