@@ -57,6 +57,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    other: {
+      "facebook-domain-verification": "9ts976m31ukn6mceu7l79catlgwq08",
+    },
+  },
 };
 
 type Props = {
